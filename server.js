@@ -12,9 +12,15 @@ app.set('view engine', 'ejs');
 // public folder to store assets
 app.use(express.static(__dirname + '/public'));
 
-// routes for app
+/* Routes
+ *
+ *
+ */
 app.get('/', function(req, res) {
     res.render('pad');
+});
+app.get('/(:id)', function(req, res) {
+  res.render('pad');
 });
 
 var shareOptions = {
