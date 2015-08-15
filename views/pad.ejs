@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Realtime Markdown Viewer</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-</head>
+  </head>
 
-<body class="container-fluid">
+  <body class="container-fluid">
 
     <section class="row">
-        <textarea class="col-md-6 full-height" id="pad">
-# Realtime Markdown Editor
+      <textarea class="col-md-6 full-height" id="pad">
+# `Mark.down();`
 
-### What is this?
+ A collaborative markdown editor written in Express.js which uses Sharejs for live editing capabilities.
 
-Type  markdown into the box on the left and immediately see it on the box on the right. If you send someone  a link to a URL other than the home page you both can edit the document at the same time.
+### Installing and running
+```bash
+$ git clone https://github.com/barbour-em/realtime-markdown-editor
+$ cd realtime-markdown-editor
+$ npm install
+$ node server.js
+```
 
-### Just start writing.</textarea>
-        <div class="col-md-6 full-height" id="markdown"></div>
+      </textarea>
+      <div class="col-md-6 full-height" id="markdown"></div>
     </section>
 
     <script src="https://cdn.rawgit.com/showdownjs/showdown/1.0.2/dist/showdown.min.js"></script>
+    <script src="script.js"></script>
     <script src="/channel/bcsocket.js"></script>
     <script src="/share/share.uncompressed.js"></script>
     <script src="/share/textarea.js"></script>
-    <script src="script.js"></script>
 
-</body>
+  </body>
 </html>
