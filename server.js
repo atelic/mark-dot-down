@@ -13,8 +13,8 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 /* Routes
- *
- *
+ * `/`    - Index file with no collaborative editing enabled
+ * `/:id` - Collaborative editing pad where :id is any url valid string
  */
 app.get('/', function(req, res) {
     res.render('pad');
