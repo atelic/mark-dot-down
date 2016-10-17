@@ -3,7 +3,7 @@ A collaborative markdown editor written in Express.js which uses Sharejs for liv
 
 ### Installing and running
 ```bash
-$ git clone https://github.com/barbour-em/mark-dot-down
+$ git clone https://github.com/atelic/mark-dot-down
 $ cd mark-dot-down
 $ npm install
 $ node server.js
